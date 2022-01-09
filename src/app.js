@@ -1,7 +1,7 @@
 const express = require("express");
 const hbs = require("hbs");
 const app = express();
-const port = Process.env.PORT || 3300;
+const port = process.env.PORT || 3300;
 
 const path = require("path");
 
@@ -34,7 +34,7 @@ app.get("*", (req, res) => {
 });
 
 
-app.listen(port, "127.0.0.1", () => {
+app.listen(port,  () => {
     console.log(`server started at port ${port}`);
 });
 
